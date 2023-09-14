@@ -1,0 +1,422 @@
+2023-09-14 12:32:44 info: Server started on http://localhost:3000
+2023-09-14 12:33:01 info: Server started on http://localhost:3000
+2023-09-14 12:36:55 info: Server started on http://localhost:3000
+2023-09-14 12:38:20 info: Server started on http://localhost:3000
+2023-09-14 12:38:42 info: GET / route called
+2023-09-14 12:38:42 info: Retrieved all employees
+2023-09-14 12:39:22 info: POST / route called
+2023-09-14 12:39:22 warn: No employee found with phone number: 7477529385
+2023-09-14 12:39:23 error: Error while creating new employee: ReferenceError: newEmployee is not defined
+2023-09-14 12:39:23 error: Error for creating new employee:  newEmployee is not defined
+2023-09-14 12:41:07 info: Server started on http://localhost:3000
+2023-09-14 12:41:12 info: POST / route called
+2023-09-14 12:41:13 info: Found employee with phone number: 7477529385
+2023-09-14 12:41:58 warn: Unauthorized: No token provided
+2023-09-14 12:42:05 info: GET / route called
+2023-09-14 12:42:05 info: Retrieved all employees
+2023-09-14 12:42:55 info: Server started on http://localhost:3000
+2023-09-14 12:43:53 info: Server started on http://localhost:3000
+2023-09-14 12:44:17 info: POST /login route called
+2023-09-14 12:44:17 info: Found employee with phone number: 7477529385
+2023-09-14 12:44:18 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:45:08 info: Server started on http://localhost:3000
+2023-09-14 12:45:42 info: POST /login route called
+2023-09-14 12:45:43 info: Found employee with phone number: 7477529385
+2023-09-14 12:45:43 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:46:08 info: POST /verifyOtp route called
+2023-09-14 12:46:08 error: Error in verifyOtp route userController.verifyOtp is not a function
+2023-09-14 12:47:04 info: Server started on http://localhost:3000
+2023-09-14 12:47:11 info: POST /login route called
+2023-09-14 12:47:12 info: Found employee with phone number: 7477529385
+2023-09-14 12:47:12 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:47:34 info: Server started on http://localhost:3000
+2023-09-14 12:47:39 info: POST /login route called
+2023-09-14 12:47:39 info: Found employee with phone number: 7477529385
+2023-09-14 12:47:39 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:48:11 info: Server started on http://localhost:3000
+2023-09-14 12:48:14 info: POST /login route called
+2023-09-14 12:48:15 info: Found employee with phone number: 7477529385
+2023-09-14 12:48:18 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:48:53 info: Server started on http://localhost:3000
+2023-09-14 12:48:56 info: POST /login route called
+2023-09-14 12:48:57 info: Found employee with phone number: 7477529385
+2023-09-14 12:48:58 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:49:10 info: POST /verifyOtp route called
+2023-09-14 12:49:10 info: Found employee with phone number: 7477529385
+2023-09-14 12:49:10 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 12:49:10 error: Error during 2FA verification: Cannot access 'user' before initialization
+2023-09-14 12:51:36 info: Server started on http://localhost:3000
+2023-09-14 12:52:06 info: POST /login route called
+2023-09-14 12:52:08 info: Found employee with phone number: 7477529385
+2023-09-14 12:52:09 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 12:52:20 warn: Unauthorized: No token provided
+2023-09-14 12:52:59 info: Server started on http://localhost:3000
+2023-09-14 12:54:00 info: Server started on http://localhost:3000
+2023-09-14 13:01:45 info: Server started on http://localhost:3000
+2023-09-14 13:03:04 info: POST /login route called
+2023-09-14 13:03:04 info: Found employee with phone number: 7477529385
+2023-09-14 13:03:04 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 13:03:25 info: POST /verifyOtp route called
+2023-09-14 13:03:25 info: Found employee with phone number: 7477529385
+2023-09-14 13:03:25 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 13:03:25 error: Error during 2FA verification: Cannot access 'user' before initialization
+2023-09-14 13:07:33 info: Server started on http://localhost:3000
+2023-09-14 13:07:56 info: GET / route called
+2023-09-14 13:07:56 info: Retrieved all employees
+2023-09-14 13:08:36 info: POST / route called
+2023-09-14 13:08:36 warn: No employee found with phone number: 7477529385
+2023-09-14 13:08:36 info: Created new user with ID: 1
+2023-09-14 13:08:41 info: Welcome email sent:
+2023-09-14 13:08:59 info: POST /login route called
+2023-09-14 13:08:59 info: Found employee with phone number: 7477529385
+2023-09-14 13:08:59 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 13:09:19 info: POST /verifyOtp route called
+2023-09-14 13:09:19 info: Found employee with phone number: 7477529385
+2023-09-14 13:09:19 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 13:09:19 error: Error during 2FA verification: Cannot access 'user' before initialization
+2023-09-14 13:48:56 info: Server started on http://localhost:3000
+2023-09-14 13:52:34 info: POST /login route called
+2023-09-14 13:52:34 info: Found employee with phone number: 7477529385
+2023-09-14 13:52:34 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 13:53:09 info: Server started on http://localhost:3000
+2023-09-14 13:53:29 info: POST /login route called
+2023-09-14 13:53:29 info: Found employee with phone number: 7477529385
+2023-09-14 13:53:30 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 13:53:49 info: POST /verifyOtp route called
+2023-09-14 13:53:49 info: Found employee with phone number: 7477529385
+2023-09-14 13:53:49 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 13:53:49 error: Error during 2FA verification: Cannot access 'user' before initialization
+2023-09-14 14:03:30 info: Server started on http://localhost:3000
+2023-09-14 14:03:52 info: GET / route called
+2023-09-14 14:03:52 info: Retrieved all employees
+2023-09-14 14:04:05 info: POST /login route called
+2023-09-14 14:04:05 error: Error during login: employeeService is not defined
+2023-09-14 14:05:10 info: Server started on http://localhost:3000
+2023-09-14 14:05:16 info: POST /login route called
+2023-09-14 14:05:17 info: Found employee with phone number: 7477529385
+2023-09-14 14:05:18 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:05:36 info: POST /verifyOtp route called
+2023-09-14 14:05:36 error: Error in verifyOtp route userController.verifyOtp is not a function
+2023-09-14 14:06:24 info: Server started on http://localhost:3000
+2023-09-14 14:06:56 info: POST /login route called
+2023-09-14 14:06:56 info: Found employee with phone number: 7477529385
+2023-09-14 14:06:57 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:07:18 info: POST /verifyOtp route called
+2023-09-14 14:07:19 info: Found employee with phone number: 7477529385
+2023-09-14 14:07:19 error: Error during 2FA verification: userService.verify2FAToken is not a function
+2023-09-14 14:07:58 info: Server started on http://localhost:3000
+2023-09-14 14:08:17 info: POST /login route called
+2023-09-14 14:08:17 info: Found employee with phone number: 7477529385
+2023-09-14 14:08:18 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:08:26 info: POST /verifyOtp route called
+2023-09-14 14:08:26 info: Found employee with phone number: 7477529385
+2023-09-14 14:08:27 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:08:27 error: Error during 2FA verification: Cannot access 'user' before initialization
+2023-09-14 14:10:55 info: Server started on http://localhost:3000
+2023-09-14 14:11:19 info: POST /login route called
+2023-09-14 14:11:20 info: Found employee with phone number: 7477529385
+2023-09-14 14:11:20 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:11:33 info: POST /verifyOtp route called
+2023-09-14 14:11:33 info: Found employee with phone number: 7477529385
+2023-09-14 14:11:34 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:11:34 error: Error during 2FA verification: Cannot access 'user' before initialization
+2023-09-14 14:13:33 info: Server started on http://localhost:3000
+2023-09-14 14:13:51 info: POST /login route called
+2023-09-14 14:13:51 info: Found employee with phone number: 7477529385
+2023-09-14 14:13:51 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:14:14 info: POST /verifyOtp route called
+2023-09-14 14:14:14 info: Found employee with phone number: 7477529385
+2023-09-14 14:14:14 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:14:36 info: GET / route called
+2023-09-14 14:14:36 info: Found employee with phone number: 7477529385
+2023-09-14 14:15:31 info: PUT / route called
+2023-09-14 14:15:31 info: Updated employee with phone number: 7477529385
+2023-09-14 14:15:37 info: Welcome email sent:
+2023-09-14 14:16:18 info: DELETE / route called
+2023-09-14 14:16:18 error: Error in delete user by login
+2023-09-14 14:17:27 info: Server started on http://localhost:3000
+2023-09-14 14:18:01 info: DELETE / route called
+2023-09-14 14:19:31 info: Server started on http://localhost:3000
+2023-09-14 14:20:00 info: DELETE / route called
+2023-09-14 14:20:00 info: Found employee with phone number: 7477529385
+2023-09-14 14:20:00 info: Deleted employee with phone number: 7477529385
+2023-09-14 14:20:42 info: Server started on http://localhost:3000
+2023-09-14 14:21:00 info: DELETE / route called
+2023-09-14 14:21:00 warn: No employee found with phone number: 7477529385
+2023-09-14 14:42:49 info: Server started on http://localhost:3000
+2023-09-14 14:44:34 info: POST / route called
+2023-09-14 14:44:34 warn: No employee found with phone number: 7477529385
+2023-09-14 14:44:34 info: Created new user with ID: 2
+2023-09-14 14:44:38 info: Welcome email sent:
+2023-09-14 14:44:49 warn: Unauthorized: No token provided
+2023-09-14 14:45:04 info: POST /login route called
+2023-09-14 14:45:04 info: Found employee with phone number: 7477529385
+2023-09-14 14:45:05 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:45:20 info: POST /verifyOtp route called
+2023-09-14 14:45:20 info: Found employee with phone number: 7477529385
+2023-09-14 14:45:20 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:45:41 info: GET / route called
+2023-09-14 14:45:41 info: Found employee with phone number: 7477529385
+2023-09-14 14:45:58 info: POST / forgot-password route called
+2023-09-14 14:45:58 info: Found employee with phone number: 7477529385
+2023-09-14 14:45:58 error: Error during forgot password: user.store2FASecret is not a function
+2023-09-14 14:47:07 info: Server started on http://localhost:3000
+2023-09-14 14:47:10 info: POST / forgot-password route called
+2023-09-14 14:47:10 info: Found employee with phone number: 7477529385
+2023-09-14 14:47:12 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:47:38 info: POST / reset-password route called
+2023-09-14 14:47:38 info: Found employee with phone number: 7477529385
+2023-09-14 14:47:38 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:47:38 info: Password updated for employee with phone number: 7477529385
+2023-09-14 14:47:39 error: Error during password reset employee is not defined
+2023-09-14 14:50:54 info: Server started on http://localhost:3000
+2023-09-14 14:51:09 info: POST / forgot-password route called
+2023-09-14 14:51:09 info: Found employee with phone number: 7477529385
+2023-09-14 14:51:10 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:51:23 info: POST / reset-password route called
+2023-09-14 14:51:23 info: Found employee with phone number: 7477529385
+2023-09-14 14:51:23 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:51:23 info: Password updated for employee with phone number: 7477529385
+2023-09-14 14:51:27 info: Welcome email sent:
+2023-09-14 14:51:42 info: POST /login route called
+2023-09-14 14:51:43 info: Found employee with phone number: 7477529385
+2023-09-14 14:51:43 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:56:02 info: Server started on http://localhost:3000
+2023-09-14 14:56:24 info: POST /login route called
+2023-09-14 14:56:24 info: Found employee with phone number: 7477529385
+2023-09-14 14:56:44 info: POST /login route called
+2023-09-14 14:56:44 info: Found employee with phone number: 7477529385
+2023-09-14 14:56:44 info: Stored 2FA secret for employee with phone number: 7477529385
+2023-09-14 14:57:02 info: POST /verifyOtp route called
+2023-09-14 14:57:02 info: Found employee with phone number: 7477529385
+2023-09-14 14:57:02 info: 2FA verification successful for employee with phone number: 7477529385
+2023-09-14 14:57:49 info: PUT / route called
+2023-09-14 14:58:31 info: Server started on http://localhost:3000
+2023-09-14 14:59:29 info: PUT / route called
+2023-09-14 14:59:29 error: Error while updating employee with phone number 9749477423: ReferenceError: id is not defined
+2023-09-14 14:59:29 error: Error for updating employee details id is not defined
+2023-09-14 15:01:19 info: Server started on http://localhost:3000
+2023-09-14 15:02:48 info: Server started on http://localhost:3000
+2023-09-14 15:03:15 info: Server started on http://localhost:3000
+2023-09-14 15:03:23 info: PUT / route called
+2023-09-14 15:03:23 error: Error while updating employee with phone number 9749477423: TypeError: Cannot read properties of null (reading 'id')
+2023-09-14 15:03:23 error: Error for updating employee details Cannot read properties of null (reading 'id')
+2023-09-14 15:06:12 info: Server started on http://localhost:3000
+2023-09-14 15:06:18 info: PUT / route called
+2023-09-14 15:06:19 warn: No employee found
+2023-09-14 15:09:31 info: Server started on http://localhost:3000
+2023-09-14 15:09:37 info: PUT / route called
+2023-09-14 15:09:43 info: Updated employee with phone number: 9749477423
+2023-09-14 15:09:46 info: Welcome email sent:
+2023-09-14 15:10:06 warn: Unauthorized: No token provided
+2023-09-14 15:10:36 info: POST / forgot-password route called
+2023-09-14 15:10:36 info: Found employee with phone number: 9749477423
+2023-09-14 15:10:36 info: Stored 2FA secret for employee with phone number: 9749477423
+2023-09-14 15:10:59 info: POST / reset-password route called
+2023-09-14 15:10:59 info: Found employee with phone number: 9749477423
+2023-09-14 15:10:59 info: 2FA verification successful for employee with phone number: 9749477423
+2023-09-14 15:10:59 info: Password updated for employee with phone number: 9749477423
+2023-09-14 15:11:02 info: Welcome email sent:
+2023-09-14 15:14:58 info: Server started on http://localhost:3000
+2023-09-14 15:15:06 info: POST / forgot-password route called
+2023-09-14 15:15:07 info: Found employee with phone number: 9749477423
+2023-09-14 15:15:07 info: Stored 2FA secret for employee with phone number: 9749477423
+2023-09-14 15:15:19 info: POST / reset-password route called
+2023-09-14 15:15:19 info: Found employee with phone number: 9749477423
+2023-09-14 15:15:19 info: 2FA verification successful for employee with phone number: 9749477423
+2023-09-14 15:15:26 info: Password updated for employee with phone number: 9749477423
+2023-09-14 15:15:34 info: Welcome email sent:
+2023-09-14 15:20:51 info: Server started on http://localhost:3000
+2023-09-14 15:20:58 info: POST / forgot-password route called
+2023-09-14 15:21:00 info: Found employee with phone number: 9749477423
+2023-09-14 15:21:00 info: Stored 2FA secret for employee with phone number: 9749477423
+2023-09-14 15:21:11 info: POST / reset-password route called
+2023-09-14 15:21:11 info: Found employee with phone number: 9749477423
+2023-09-14 15:21:11 info: 2FA verification successful for employee with phone number: 9749477423
+2023-09-14 15:21:12 info: Password updated for employee with phone number: 9749477423
+2023-09-14 15:21:15 info: Welcome email sent:
+2023-09-14 15:22:56 info: Server started on http://localhost:3000
+2023-09-14 15:23:08 info: POST / forgot-password route called
+2023-09-14 15:23:09 info: Found employee with phone number: 9749477423
+2023-09-14 15:23:09 info: Stored 2FA secret for employee with phone number: 9749477423
+2023-09-14 15:23:25 info: POST / reset-password route called
+2023-09-14 15:23:25 info: Found employee with phone number: 9749477423
+2023-09-14 15:23:25 info: 2FA verification successful for employee with phone number: 9749477423
+2023-09-14 15:23:26 info: Password updated for employee with phone number: 9749477423
+2023-09-14 15:23:29 info: Welcome email sent:
+2023-09-14 15:25:26 info: Server started on http://localhost:3000
+2023-09-14 15:25:58 info: POST / forgot-password route called
+2023-09-14 15:25:58 info: Found employee with phone number: 9749477423
+2023-09-14 15:25:58 info: Stored 2FA secret for employee with phone number: 9749477423
+2023-09-14 15:26:07 info: POST / reset-password route called
+2023-09-14 15:26:07 info: Found employee with phone number: 9749477423
+2023-09-14 15:26:15 info: POST / reset-password route called
+2023-09-14 15:26:15 info: Found employee with phone number: 9749477423
+2023-09-14 15:26:15 info: 2FA verification successful for employee with phone number: 9749477423
+2023-09-14 15:26:15 info: Password updated for employee with phone number: 9749477423
+2023-09-14 15:26:18 info: Welcome email sent:
+2023-09-14 16:25:01 info: Server started on http://localhost:3000
+2023-09-14 16:26:21 warn: Unauthorized: No token provided
+2023-09-14 16:28:32 info: Server started on http://localhost:3000
+2023-09-14 16:29:01 warn: Unauthorized: No token provided
+2023-09-14 16:57:40 info: Server started on http://localhost:3000
+2023-09-14 17:01:11 info: POST / userCreate route called
+2023-09-14 17:01:12 warn: No user found with phone number: 7477858585
+2023-09-14 17:01:13 info: Created new user with ID: 1
+2023-09-14 17:01:30 warn: Unauthorized: No token provided
+2023-09-14 17:01:45 info: POST / userLogin route called
+2023-09-14 17:01:45 warn: No user found with phone number: 7477529385
+2023-09-14 17:01:57 info: POST / userLogin route called
+2023-09-14 17:01:57 info: Found user with phone number: 7477858585
+2023-09-14 17:01:57 info: Stored 2FA secret for user with phone number: 7477858585
+2023-09-14 17:02:12 info: POST / verifyOtp route called
+2023-09-14 17:02:12 info: Found user with phone number: 7477858585
+2023-09-14 17:02:12 info: 2FA verification successful for user with phone number: 7477858585
+2023-09-14 17:02:44 info: GET / getAllUsers route called
+2023-09-14 17:02:44 info: Retrieved all users
+2023-09-14 17:02:55 info: GET / getUserByLogin route called
+2023-09-14 17:02:55 info: Found user with phone number: 7477858585
+2023-09-14 17:04:12 info: PUT / updateUser route called
+2023-09-14 17:04:12 info: Updated user with phone number: 7477852852
+2023-09-14 17:04:29 info: GET / getUserByLogin route called
+2023-09-14 17:04:29 warn: No user found with phone number: 7477858585
+2023-09-14 17:04:55 info: POST / userLogin route called
+2023-09-14 17:04:55 info: Found user with phone number: 7477852852
+2023-09-14 17:04:56 info: Stored 2FA secret for user with phone number: 7477852852
+2023-09-14 17:05:10 info: POST / verifyOtp route called
+2023-09-14 17:05:10 info: Found user with phone number: 7477852852
+2023-09-14 17:05:10 info: 2FA verification successful for user with phone number: 7477852852
+2023-09-14 17:05:32 info: GET / getUserByLogin route called
+2023-09-14 17:05:32 info: Found user with phone number: 7477852852
+2023-09-14 17:17:52 info: Server started on http://localhost:3000
+2023-09-14 17:18:24 info: POST / userLogin route called
+2023-09-14 17:18:24 warn: No user found with phone number: 7477529385
+2023-09-14 17:19:01 info: POST / userLogin route called
+2023-09-14 17:19:01 info: Found user with phone number: 7477852852
+2023-09-14 17:19:02 info: Stored 2FA secret for user with phone number: 7477852852
+2023-09-14 17:19:17 info: POST / verifyOtp route called
+2023-09-14 17:19:17 info: Found user with phone number: 7477852852
+2023-09-14 17:19:17 info: 2FA verification successful for user with phone number: 7477852852
+2023-09-14 17:19:42 info: GET / getUserByLogin route called
+2023-09-14 17:19:42 info: Found user with phone number: 7477852852
+2023-09-14 17:19:51 info: GET / getAllUsers route called
+2023-09-14 17:19:51 info: Retrieved all users
+2023-09-14 17:20:30 info: PUT / updateUser route called
+2023-09-14 17:20:30 info: Updated user with phone number: 7477258258
+2023-09-14 17:20:45 info: GET / getUserByLogin route called
+2023-09-14 17:20:45 warn: No user found with phone number: 7477852852
+2023-09-14 17:21:39 info: Server started on http://localhost:3000
+2023-09-14 17:22:48 info: Server started on http://localhost:3000
+2023-09-14 17:23:40 info: POST / userCreate route called
+2023-09-14 17:23:40 warn: No user found with phone number: 7477747774
+2023-09-14 17:23:41 info: Created new user with ID: 2
+2023-09-14 17:24:32 info: POST / userLogin route called
+2023-09-14 17:24:32 info: Found user with phone number: 7477747774
+2023-09-14 17:24:33 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 17:24:50 info: POST / verifyOtp route called
+2023-09-14 17:24:50 info: Found user with phone number: 7477747774
+2023-09-14 17:24:50 info: 2FA verification successful for user with phone number: 7477747774
+2023-09-14 17:25:13 info: GET / getUserByLogin route called
+2023-09-14 17:25:13 info: Found user with phone number: 7477747774
+2023-09-14 17:25:23 info: GET / getAllUsers route called
+2023-09-14 17:25:23 info: Retrieved all users
+2023-09-14 17:25:50 info: POST / forgot-password route called
+2023-09-14 17:25:50 warn: No user found with phone number: 7477529385
+2023-09-14 17:25:58 info: POST / forgot-password route called
+2023-09-14 17:25:58 info: Found user with phone number: 7477747774
+2023-09-14 17:25:58 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 17:26:21 info: POST / reset-password route called
+2023-09-14 17:26:21 info: Found user with phone number: 7477747774
+2023-09-14 17:26:22 info: 2FA verification successful for user with phone number: 7477747774
+2023-09-14 17:26:22 info: Password updated for user with phone number: 7477747774
+2023-09-14 17:26:32 info: POST / reset-password route called
+2023-09-14 17:26:32 info: Found user with phone number: 7477747774
+2023-09-14 17:26:44 info: GET / getUserByLogin route called
+2023-09-14 17:26:44 info: Found user with phone number: 7477747774
+2023-09-14 18:12:09 info: Server started on http://localhost:3000
+2023-09-14 18:12:11 info: POST / userLogin route called
+2023-09-14 18:12:12 info: Found user with phone number: 7477747774
+2023-09-14 18:12:24 info: POST / forgot-password route called
+2023-09-14 18:12:24 info: Found user with phone number: 7477747774
+2023-09-14 18:12:24 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 18:14:12 info: Server started on http://localhost:3000
+2023-09-14 18:14:16 info: POST / forgot-password route called
+2023-09-14 18:14:19 info: Found user with phone number: 7477747774
+2023-09-14 18:14:19 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 18:14:52 info: Server started on http://localhost:3000
+2023-09-14 18:14:57 info: POST / forgot-password route called
+2023-09-14 18:14:57 info: Found user with phone number: 7477747774
+2023-09-14 18:14:57 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 18:15:17 info: Server started on http://localhost:3000
+2023-09-14 18:15:21 info: POST / forgot-password route called
+2023-09-14 18:15:21 info: Found user with phone number: 7477747774
+2023-09-14 18:15:21 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 18:15:57 info: Server started on http://localhost:3000
+2023-09-14 18:16:00 info: POST / forgot-password route called
+2023-09-14 18:16:04 info: Found user with phone number: 7477747774
+2023-09-14 18:16:06 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 18:16:22 info: POST / reset-password route called
+2023-09-14 18:16:22 info: Found user with phone number: 7477747774
+2023-09-14 18:16:23 info: 2FA verification successful for user with phone number: 7477747774
+2023-09-14 18:16:23 info: Password updated for user with phone number: 7477747774
+2023-09-14 18:16:33 info: POST / userLogin route called
+2023-09-14 18:16:33 info: Found user with phone number: 7477747774
+2023-09-14 18:16:33 info: Stored 2FA secret for user with phone number: 7477747774
+2023-09-14 18:16:44 info: POST / verifyOtp route called
+2023-09-14 18:16:44 info: Found user with phone number: 7477747774
+2023-09-14 18:16:44 info: 2FA verification successful for user with phone number: 7477747774
+2023-09-14 18:17:05 info: GET / getUserByLogin route called
+2023-09-14 18:17:05 info: Found user with phone number: 7477747774
+2023-09-14 18:17:11 info: GET / getAllUsers route called
+2023-09-14 18:17:11 info: Retrieved all users
+2023-09-14 18:18:02 info: PUT / updateUser route called
+2023-09-14 18:18:02 info: Updated user with phone number: 7477747774
+2023-09-14 18:18:25 info: GET / getAllUsers route called
+2023-09-14 18:18:25 info: Retrieved all users
+2023-09-14 18:18:43 info: PUT / updateUser route called
+2023-09-14 18:18:43 info: Updated user with phone number: 7477529385
+2023-09-14 18:18:50 info: GET / getAllUsers route called
+2023-09-14 18:18:50 info: Retrieved all users
+2023-09-14 18:19:11 info: GET / getUserByLogin route called
+2023-09-14 18:19:12 warn: No user found with phone number: 7477747774
+2023-09-14 18:21:45 info: Server started on http://localhost:3000
+2023-09-14 18:34:05 info: Server started on http://localhost:3000
+2023-09-14 18:34:34 info: Server started on http://localhost:3000
+2023-09-14 18:35:37 info: POST / userCreate route called
+2023-09-14 18:35:50 info: POST / userCreate route called
+2023-09-14 18:36:05 info: POST / userCreate route called
+2023-09-14 18:36:23 info: POST / userCreate route called
+2023-09-14 18:36:35 info: POST / userCreate route called
+2023-09-14 18:36:35 warn: No user found with phone number: 7477525252
+2023-09-14 18:36:36 info: Created new user with ID: 3
+2023-09-14 18:36:51 warn: Unauthorized: No token provided
+2023-09-14 18:37:26 info: POST / userLogin route called
+2023-09-14 18:37:26 info: Found user with phone number: 7477525252
+2023-09-14 18:37:27 info: Stored 2FA secret for user with phone number: 7477525252
+2023-09-14 18:37:54 info: POST / verifyOtp route called
+2023-09-14 18:37:55 info: Found user with phone number: 7477525252
+2023-09-14 18:37:55 info: 2FA verification successful for user with phone number: 7477525252
+2023-09-14 18:38:16 info: GET / getAllUsers route called
+2023-09-14 18:38:16 info: Retrieved all users
+2023-09-14 18:38:26 info: GET / getUserByLogin route called
+2023-09-14 18:38:26 info: Found user with phone number: 7477525252
+2023-09-14 18:38:52 info: POST / forgot-password route called
+2023-09-14 18:38:52 info: Found user with phone number: 7477525252
+2023-09-14 18:38:52 info: Stored 2FA secret for user with phone number: 7477525252
+2023-09-14 18:39:20 info: POST / reset-password route called
+2023-09-14 18:39:21 info: Found user with phone number: 7477525252
+2023-09-14 18:39:21 info: 2FA verification successful for user with phone number: 7477525252
+2023-09-14 18:39:21 info: Password updated for user with phone number: 7477525252
+2023-09-14 18:39:36 info: GET / getAllUsers route called
+2023-09-14 18:39:36 info: Retrieved all users
+2023-09-14 18:39:41 info: GET / getUserByLogin route called
+2023-09-14 18:39:41 info: Found user with phone number: 7477525252
+2023-09-14 18:39:43 info: GET / getUserByLogin route called
+2023-09-14 18:39:43 info: Found user with phone number: 7477525252
+2023-09-14 18:40:11 info: PUT / updateUser route called
+2023-09-14 18:40:11 info: Updated user with phone number: 7477525252
+2023-09-14 18:40:24 info: PUT / updateUser route called
+2023-09-14 18:40:33 info: DELETE / deleteUser route called
+2023-09-14 18:40:34 info: Found user with phone number: 7477525252
+2023-09-14 18:40:34 info: Deleted user with phone number: 7477525252
+2023-09-14 18:42:32 info: Server started on http://localhost:3000

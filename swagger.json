@@ -1,0 +1,502 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "User Management API",
+    "description": "API for managing Users"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "BearerAuth": [ ]
+    }
+  ],
+  "paths": {
+    "/userRoutes/getAllUsers": {
+      "get": {
+        "tags": [ "User Management System" ],
+        "summary": "Get all Users",
+        "responses": {
+          "200": {
+            "description": "List of all users",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": [ ]
+          }
+        ]
+      }
+    },
+    "/userRoutes/userCreate": {
+      "post": {
+        "tags": [ "User Management System" ],
+        "summary": "Create a new user",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "age": {
+                    "type": "integer"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "country": {
+                    "type": "string",
+                    "enum": [
+                      "India",
+                      "China",
+                      "Japan",
+                      "Pakistan",
+                      "Bangladesh",
+                      "USA",
+                      "Canada",
+                      "UK",
+                      "Germany",
+                      "Australia",
+                      "France",
+                      "Brazil",
+                      "Mexico",
+                      "Russia",
+                      "South Korea",
+                      "Turkey",
+                      "Indonesia",
+                      "Italy",
+                      "Spain",
+                      "Nigeria",
+                      "South Africa"
+                    ]
+                  },
+                  "gender": {
+                    "type": "string",
+                    "enum": [ "Male", "Female", "Other" ]
+                  },
+                  "phoneNo": {
+                    "type": "string",
+                    "pattern": "^[0-9]{10}$"
+                  },
+                  "password": {
+                    "type": "string",
+                    "format": "password",
+                    "x-enum-varnames": [ "password" ]
+                  },
+                  "profilePicture": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                },
+                "required": [
+                  "firstName",
+                  "lastName",
+                  "age",
+                  "email",
+                  "country",
+                  "gender",
+                  "phoneNo",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "User created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                },
+                "examples": {
+                  "example1": {
+                    "value": {
+                      "message": "User created successfully",
+                      "emailNotification": "An email notification has been sent to the user."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid input format" },
+          "500": {
+            "description": "Server Error"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": [ ]
+          }
+        ]
+      }
+    },
+
+    "/userRoutes/getUserBylogin": {
+      "get": {
+        "tags": [ "User Management System" ],
+        "summary": "Get an user by Login",
+
+        "responses": {
+          "200": {
+            "description": "User data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "User not found"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": [ ]
+          }
+        ]
+      }
+    },
+    "/userRoutes/updateUser": {
+      "put": {
+        "tags": [ "User Management System" ],
+        "summary": "Update an user by login",
+
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "age": {
+                    "type": "integer"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "country": {
+                    "type": "string",
+                    "enum": [
+                      "India",
+                      "China",
+                      "Japan",
+                      "Pakistan",
+                      "Bangladesh",
+                      "USA",
+                      "Canada",
+                      "UK",
+                      "Germany",
+                      "Australia",
+                      "France",
+                      "Brazil",
+                      "Mexico",
+                      "Russia",
+                      "South Korea",
+                      "Turkey",
+                      "Indonesia",
+                      "Italy",
+                      "Spain",
+                      "Nigeria",
+                      "South Africa"
+                    ]
+                  },
+                  "gender": {
+                    "type": "string",
+                    "enum": [ "Male", "Female", "Other" ]
+                  },
+                  "phoneNo": {
+                    "type": "string",
+                    "pattern": "^[0-9]{10}$"
+                  },
+                  "profilePicture": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                },
+                "required": [
+                  "firstName",
+                  "lastName",
+                  "age",
+                  "email",
+                  "country",
+                  "gender",
+                  "phoneNo"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "User updated successfully..Need to login again",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input format"
+          },
+          "404": {
+            "description": "Employee not found"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": [ ]
+          }
+        ]
+      }
+    },
+    "/userRoutes/deleteUser": {
+      "delete": {
+        "tags": [ "User Management System" ],
+        "summary": "Delete an user",
+
+        "responses": {
+          "200": {
+            "description": "User deleted successfully"
+          },
+          "400": {
+            "description": "User not found"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": [ ]
+          }
+        ]
+      }
+    }
+    ,
+    "/userRoutes/userLogin": {
+      "post": {
+        "tags": [ "User Management System" ],
+        "summary": "Login to get JWT token",
+        "parameters": [
+          {
+            "name": "phoneNo",
+            "in": "query",
+            "required": true,
+            "description": "User's phone number",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "required": true,
+            "description": "User's password",
+            "schema": {
+              "type": "string",
+              "format": "password"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Login successful. An OTP has been sent to the user's phone number."
+          },
+          "400": {
+            "description": "Invalid input format"
+          },
+          "401": {
+            "description": "Invalid credentials"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+
+    "/userRoutes/verifyOtp": {
+      "post": {
+        "tags": [ "User Management System" ],
+        "summary": "Verify OTP and get JWT token",
+        "parameters": [
+          {
+            "name": "phoneNo",
+            "in": "query",
+            "required": true,
+            "description": "User's phone number",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "otp",
+            "in": "query",
+            "required": true,
+            "description": "One-Time Password (OTP) received via SMS",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OTP verified successfully. JWT token is provided in the response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string",
+                      "description": "JWT token to be used for authentication in protected routes. Include this token in the 'Authorization' header of future requests."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input format"
+          },
+          "401": {
+            "description": "Invalid OTP"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/userRoutes/forgot-password": {
+      "post": {
+        "tags": [ "User Management System" ],
+        "summary": "Initiate forgot password process and send OTP via SMS",
+        "parameters": [
+          {
+            "name": "phoneNo",
+            "in": "query",
+            "required": true,
+            "description": "User's phone number",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Temporary token sent via SMS. OTP valid for 60 seconds."
+          },
+          "400": {
+            "description": "Invalid input format"
+          },
+          "401": {
+            "description": "Invalid credentials"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/userRoutes/reset-password": {
+      "post": {
+        "tags": [ "User Management System" ],
+        "summary": "Reset user's password using OTP verification",
+        "parameters": [
+          {
+            "name": "phoneNo",
+            "in": "query",
+            "required": true,
+            "description": "User's phone number",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "otp",
+            "in": "query",
+            "required": true,
+            "description": "One-Time Password (OTP) received via SMS",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "newPassword",
+            "in": "query",
+            "required": true,
+            "description": "User's new password",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Password reset successful"
+          },
+          "401": {
+            "description": "Invalid OTP"
+          },
+          "400": {
+            "description": "Invalid input format"
+          },
+          "404": {
+            "description": "User not found"
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    }
+  }
+}
+
