@@ -84,7 +84,7 @@ exports.userCreate = async ( req, res ) => {
       profilePicture
     );
 
-    // const emailContent = `Hi ${ firstName },\n\nWelcome to our platform! We're excited to have you on board.
+    // const emailContent = `Hi ${ firstName },\n\nWelcome to our platform!
     // Here are the details you provided:\n
     // First Name: ${ firstName }
     // Last Name: ${ lastName }
@@ -120,7 +120,7 @@ exports.getAllUsers = async ( req, res ) => {
   }
 };
 
-//Fetching user data by login
+//Fetching user details by login
 exports.getUserByLogin = async ( req, res ) => {
   const phone = req.user.phoneNo;
   try
@@ -216,7 +216,6 @@ exports.updateUser = async ( req, res ) => {
       //   Phone Number: ${ phoneNo }`;
 
       // Send welcome email using the utility function
-
       // await emailUtil.sendWelcomeEmail( email, emailContent );
 
       res.status( 201 ).json( updateUser );
@@ -411,7 +410,7 @@ exports.forgotPassword = async ( req, res ) => {
 
     const otpMessage = `Your 2FA token : ${ otp }`;
 
-    // // Send the SMS using the utility function
+    // Send the SMS using the utility function
     // await sendSms( phoneNo, otpMessage );
 
     res.status( 200 ).json( { otpMessage } );
@@ -455,12 +454,12 @@ exports.resetPassword = async ( req, res ) => {
       return res.status( 404 ).json( { message: i18next.t( 'employeeNotFound' ) } );
     }
 
+    //Check wheather the password same as previous
     const isPasswordValid = await bcrypt.compare( newPassword, user.password, );
     if ( isPasswordValid )
     {
       return res.status( 400 ).json( { message: i18next.t( 'samePassword' ) } );
     }
-
 
     const isOtpValid = await userService.verifyOtp( phoneNo, otp );
     if ( !isOtpValid )

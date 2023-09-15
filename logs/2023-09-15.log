@@ -1,0 +1,80 @@
+2023-09-15 11:05:47 info: Server started on http://localhost:3000
+2023-09-15 11:09:11 info: Server started on http://localhost:3000
+2023-09-15 11:17:33 info: Server started on http://localhost:3000
+2023-09-15 11:20:24 info: Server started on http://localhost:3000
+2023-09-15 11:21:37 warn: Unauthorized: No token provided
+2023-09-15 11:22:28 info: POST / userCreate route called
+2023-09-15 11:22:29 warn: No user found with phone number: 7477741741
+2023-09-15 11:22:29 info: Created new user with ID: 4
+2023-09-15 11:22:40 warn: Unauthorized: No token provided
+2023-09-15 11:22:56 info: POST / userLogin route called
+2023-09-15 11:22:56 info: Found user with phone number: 7477741741
+2023-09-15 11:22:57 info: Stored 2FA secret for user with phone number: 7477741741
+2023-09-15 11:23:11 info: POST / verifyOtp route called
+2023-09-15 11:23:11 info: Found user with phone number: 7477529385
+2023-09-15 11:23:12 info: 2FA verification failed for user with phone number: 7477529385
+2023-09-15 11:23:50 info: PUT / updateUser route called
+2023-09-15 11:23:50 error: Error while updating user with phone number 7477741741: SequelizeUniqueConstraintError: Validation error
+2023-09-15 11:23:50 error: Error for updating user details Validation error
+2023-09-15 11:24:35 info: PUT / updateUser route called
+2023-09-15 11:24:35 error: Error while updating user with phone number 7477741741: SequelizeUniqueConstraintError: Validation error
+2023-09-15 11:24:35 error: Error for updating user details Validation error
+2023-09-15 11:29:39 info: Server started on http://localhost:3000
+2023-09-15 11:31:14 info: POST / userCreate route called
+2023-09-15 11:31:14 warn: No user found with phone number: 9749974997
+2023-09-15 11:31:15 info: Created new user with ID: 1
+2023-09-15 11:31:37 info: POST / userLogin route called
+2023-09-15 11:31:43 info: Found user with phone number: 9749974997
+2023-09-15 11:31:51 info: POST / userLogin route called
+2023-09-15 11:31:51 info: Found user with phone number: 9749974997
+2023-09-15 11:32:14 info: POST / userLogin route called
+2023-09-15 11:32:14 info: Found user with phone number: 9749974997
+2023-09-15 11:32:40 info: POST / forgot-password route called
+2023-09-15 11:32:41 info: Found user with phone number: 9749974997
+2023-09-15 11:32:41 info: Stored 2FA secret for user with phone number: 9749974997
+2023-09-15 11:33:02 info: POST / reset-password route called
+2023-09-15 11:33:02 info: Found user with phone number: 9749974997
+2023-09-15 11:33:03 info: 2FA verification successful for user with phone number: 9749974997
+2023-09-15 11:33:03 info: Password updated for user with phone number: 9749974997
+2023-09-15 11:33:14 info: POST / userLogin route called
+2023-09-15 11:33:14 info: Found user with phone number: 9749974997
+2023-09-15 11:33:15 info: Stored 2FA secret for user with phone number: 9749974997
+2023-09-15 11:33:30 info: POST / verifyOtp route called
+2023-09-15 11:33:30 info: Found user with phone number: 9749974997
+2023-09-15 11:33:30 info: 2FA verification successful for user with phone number: 9749974997
+2023-09-15 11:33:52 info: GET / getAllUsers route called
+2023-09-15 11:33:52 info: Retrieved all users
+2023-09-15 11:34:04 info: GET / getUserByLogin route called
+2023-09-15 11:34:04 info: Found user with phone number: 9749974997
+2023-09-15 11:34:52 info: PUT / updateUser route called
+2023-09-15 11:34:52 info: Updated user with phone number: 9749974997
+2023-09-15 11:35:04 info: PUT / updateUser route called
+2023-09-15 11:35:05 info: Updated user with phone number: 9749477423
+2023-09-15 11:35:13 info: GET / getUserByLogin route called
+2023-09-15 11:35:13 warn: No user found with phone number: 9749974997
+2023-09-15 11:35:17 info: GET / getAllUsers route called
+2023-09-15 11:35:17 info: Retrieved all users
+2023-09-15 11:35:32 info: POST / forgot-password route called
+2023-09-15 11:35:32 warn: No user found with phone number: 9749974997
+2023-09-15 11:35:41 info: POST / forgot-password route called
+2023-09-15 11:35:41 info: Found user with phone number: 9749477423
+2023-09-15 11:35:41 info: Stored 2FA secret for user with phone number: 9749477423
+2023-09-15 11:36:01 info: POST / reset-password route called
+2023-09-15 11:36:01 info: Found user with phone number: 9749477423
+2023-09-15 11:36:10 info: GET / getAllUsers route called
+2023-09-15 11:36:10 info: Retrieved all users
+2023-09-15 11:36:19 info: DELETE / deleteUser route called
+2023-09-15 11:36:19 warn: No user found with phone number: 9749974997
+2023-09-15 11:38:38 info: POST / userLogin route called
+2023-09-15 11:38:38 info: Found user with phone number: 9749477423
+2023-09-15 11:38:39 info: Stored 2FA secret for user with phone number: 9749477423
+2023-09-15 11:38:57 info: POST / verifyOtp route called
+2023-09-15 11:38:57 info: Found user with phone number: 9749477423
+2023-09-15 11:38:57 info: 2FA verification successful for user with phone number: 9749477423
+2023-09-15 11:39:28 info: GET / getAllUsers route called
+2023-09-15 11:39:28 info: Retrieved all users
+2023-09-15 11:39:33 info: GET / getUserByLogin route called
+2023-09-15 11:39:33 info: Found user with phone number: 9749477423
+2023-09-15 11:39:38 info: DELETE / deleteUser route called
+2023-09-15 11:39:38 info: Found user with phone number: 9749477423
+2023-09-15 11:39:38 info: Deleted user with phone number: 9749477423
