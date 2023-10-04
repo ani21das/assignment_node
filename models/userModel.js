@@ -6,7 +6,7 @@ const validator = require( 'validator' );
 const crypto = require( 'crypto' );
 const logger = require( '../logger' );
 
-const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
+// const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
 
 const User = sequelize.define(
     'User',
@@ -120,18 +120,51 @@ User.beforeCreate( async ( user ) => {
     }
 } );
 
-User.encryptField = function ( fieldValue ) {
-    const cipher = crypto.createCipher( 'aes-256-cbc', ENCRYPTION_KEY );
-    let encrypted = cipher.update( fieldValue, 'utf8', 'hex' );
-    encrypted += cipher.final( 'hex' );
-    return encrypted;
-};
 
-User.decryptField = function ( encryptedValue ) {
-    const decipher = crypto.createDecipher( 'aes-256-cbc', ENCRYPTION_KEY );
-    let decrypted = decipher.update( encryptedValue, 'hex', 'utf8' );
-    decrypted += decipher.final( 'utf8' );
+// Including crypto module
+const crypto = require( 'crypto' );
+
+// Implementing pbkdf2 with all its parameters
+crypto.pbkdf2( 'secret', 'salt', 100000, 16,
+    'sha512', ( err, derivedKey ) => {
+
+        if ( err ) throw err;
+
+        // Prints derivedKey
+        console.log( derivedKey.toString( 'hex' ) );
+    } );
+
+// Specify the desired key length( e.g., 256 bits for AES - 256)
+
+// const crypto = require('crypto');
+// const keyLengthInBytes = 16; // 256 bits / 8 bits per byte// Generate a secure encryption key
+// const encryptionKey = crypto.randomBytes( keyLengthInBytes );
+// console.log( 'Encryption Key (hex format):', encryptionKey.toString( 'hex' ) );
+
+
+
+const algorithm = 'aes-256-cbc';
+const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
+const IV_LENGTH = 16;
+
+User.encryptField = function (fieldValue) {
+    const iv = crypto.randomBytes(IV_LENGTH);
+    const cipher = crypto.createCipheriv(algorithm, Buffer.from(ENCRYPTION_KEY, 'utf8'), iv);
+    let encrypted = cipher.update(fieldValue, 'utf8', 'hex');
+    encrypted += cipher.final('hex');
+    return iv.toString('hex') + ':' + encrypted;
+}
+
+User.decryptField = function (encryptedValue) {
+    const textParts = encryptedValue.split(':');
+    const iv = Buffer.from(textParts.shift(), 'hex');
+    const encryptedText = Buffer.from(textParts.join(':'), 'hex');
+    const decipher = crypto.createDecipheriv(algorithm, Buffer.from(ENCRYPTION_KEY, 'utf8'), iv);
+    let decrypted = decipher.update(encryptedText, 'hex', 'utf8');
+    decrypted += decipher.final('utf8');
     return decrypted;
-};
+}
 
 module.exports = User;
+
+  

@@ -86,3 +86,77 @@ notNull Violation: User.bankRoutingNumber cannot be null
 2023-10-04 17:03:39 warn: No user found with phone number: 7477529380
 2023-10-04 17:03:49 info: GET / getAllUsers route called
 2023-10-04 17:04:57 info: Server started on http://localhost:3000
+2023-10-04 17:49:10 info: Server started on http://localhost:3000
+2023-10-04 17:50:33 info: GET / getAllUsers route called
+2023-10-04 17:59:40 info: Server started on http://localhost:3000
+2023-10-04 18:03:08 info: Server started on http://localhost:3000
+2023-10-04 18:03:25 info: GET / getAllUsers route called
+2023-10-04 18:03:26 error: Error for finding all user details: Invalid key length
+2023-10-04 18:04:30 info: Server started on http://localhost:3000
+2023-10-04 18:04:35 info: GET / getAllUsers route called
+2023-10-04 18:05:43 info: POST / userCreate route called
+2023-10-04 18:05:43 warn: No user found with phone number: 7477529386
+2023-10-04 18:05:43 error: Error for creating new user:  Invalid key length
+2023-10-04 18:11:08 info: Server started on http://localhost:3000
+2023-10-04 18:12:53 info: Server started on http://localhost:3000
+2023-10-04 18:18:00 info: Server started on http://localhost:3000
+2023-10-04 18:19:07 info: Server started on http://localhost:3000
+2023-10-04 18:19:29 info: Server started on http://localhost:3000
+2023-10-04 18:21:50 info: Server started on http://localhost:3000
+2023-10-04 18:22:21 info: POST / userCreate route called
+2023-10-04 18:22:24 warn: No user found with phone number: 7477529386
+2023-10-04 18:22:24 error: Error for creating new user:  Invalid key length
+2023-10-04 18:24:38 info: Server started on http://localhost:3000
+2023-10-04 18:26:10 info: Server started on http://localhost:3000
+2023-10-04 18:26:37 info: POST / userCreate route called
+2023-10-04 18:26:39 warn: No user found with phone number: 7477529386
+2023-10-04 18:27:09 info: GET / getAllUsers route called
+2023-10-04 18:29:59 info: Server started on http://localhost:3000
+2023-10-04 18:30:28 info: Server started on http://localhost:3000
+2023-10-04 18:32:32 info: Server started on http://localhost:3000
+2023-10-04 18:33:21 info: POST / userCreate route called
+2023-10-04 18:33:24 warn: No user found with phone number: 7477529387
+2023-10-04 18:33:26 error: Error for creating new user:  Invalid initialization vector
+2023-10-04 18:39:27 info: Server started on http://localhost:3000
+2023-10-04 18:39:34 info: POST / userCreate route called
+2023-10-04 18:39:40 warn: No user found with phone number: 7477529387
+2023-10-04 18:39:41 error: Error for creating new user:  Invalid initialization vector
+2023-10-04 18:41:13 info: Server started on http://localhost:3000
+2023-10-04 18:42:15 info: Server started on http://localhost:3000
+2023-10-04 18:42:22 info: POST / userCreate route called
+2023-10-04 18:42:24 warn: No user found with phone number: 7477529387
+2023-10-04 18:42:27 error: Error for creating new user:  Invalid initialization vector
+2023-10-04 18:43:36 info: Server started on http://localhost:3000
+2023-10-04 18:44:41 info: Server started on http://localhost:3000
+2023-10-04 18:44:46 info: POST / userCreate route called
+2023-10-04 18:44:49 warn: No user found with phone number: 7477529387
+2023-10-04 18:45:04 info: GET / getAllUsers route called
+2023-10-04 18:45:37 info: POST / userCreate route called
+2023-10-04 18:45:38 warn: No user found with phone number: 7477529388
+2023-10-04 18:45:50 info: GET / getAllUsers route called
+2023-10-04 18:48:14 info: Server started on http://localhost:3000
+2023-10-04 18:48:53 info: POST / userCreate route called
+2023-10-04 18:48:57 warn: No user found with phone number: 9749744744
+2023-10-04 18:49:07 info: GET / getAllUsers route called
+2023-10-04 19:07:17 info: Server started on http://localhost:3000
+2023-10-04 19:11:03 info: Server started on http://localhost:3000
+2023-10-04 19:11:12 info: POST / userCreate route called
+2023-10-04 19:11:13 warn: No user found with phone number: 9749744749
+2023-10-04 19:11:13 error: Error for creating new user:  Invalid key length
+2023-10-04 19:12:44 info: Server started on http://localhost:3000
+2023-10-04 19:12:51 info: POST / userCreate route called
+2023-10-04 19:12:52 warn: No user found with phone number: 9749744749
+2023-10-04 19:12:52 error: Error for creating new user:  Invalid initialization vector
+2023-10-04 19:13:27 info: Server started on http://localhost:3000
+2023-10-04 19:13:30 info: POST / userCreate route called
+2023-10-04 19:13:31 warn: No user found with phone number: 9749744749
+2023-10-04 19:13:31 error: Error for creating new user:  Invalid initialization vector
+2023-10-04 19:14:48 info: Server started on http://localhost:3000
+2023-10-04 19:15:54 info: Server started on http://localhost:3000
+2023-10-04 19:16:57 info: Server started on http://localhost:3000
+2023-10-04 19:17:00 info: POST / userCreate route called
+2023-10-04 19:17:01 warn: No user found with phone number: 9749744749
+2023-10-04 19:17:01 error: Error for creating new user:  Invalid key length
+2023-10-04 19:17:49 info: Server started on http://localhost:3000
+2023-10-04 19:17:54 info: POST / userCreate route called
+2023-10-04 19:17:54 warn: No user found with phone number: 9749744749
