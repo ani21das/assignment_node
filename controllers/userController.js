@@ -20,13 +20,16 @@ exports.userCreate = async ( req, res ) => {
     gender,
     phoneNo,
     password,
+    bankAccountNumber,
+    bankRoutingNumber
   } = req.body;
 
   const profilePicture = req.file ? req.file.filename : null;
 
   try
   {
-    if ( !firstName || !lastName || !age || !email || !country || !gender || !phoneNo || !password )
+    if ( !firstName || !lastName || !age || !email || !country || !gender || !phoneNo || !password || !bankAccountNumber ||
+      !bankRoutingNumber )
     {
       return res.status( 400 ).json( { message: i18next.t( 'requiredFields' ) } );
     }
@@ -65,8 +68,8 @@ exports.userCreate = async ( req, res ) => {
       return res.status( 400 ).json( { message: i18next.t( 'invalidPasswordFormat' ) } );
     }
 
-    const existingUser = await userService.
-      getUserByLogin( phoneNo );
+    const existingUser = await userService.getUserByLogin( phoneNo );
+
     if ( existingUser )
     {
       return res.status( 400 ).json( { message: i18next.t( 'phoneAlreadyRegistered' ) } );
@@ -81,24 +84,10 @@ exports.userCreate = async ( req, res ) => {
       gender,
       phoneNo,
       password,
-      profilePicture
+      profilePicture,
+      bankAccountNumber,
+      bankRoutingNumber
     );
-
-    // const emailContent = `Hi ${ firstName },\n\nWelcome to our platform!
-    // Here are the details you provided:\n
-    // First Name: ${ firstName }
-    // Last Name: ${ lastName }
-    // Age: ${ age }
-    // Email: ${ email }
-    // Country: ${ country }
-    // Gender: ${ gender }
-    // Phone Number: ${ phoneNo }
-    // Password: ${ password }`;
-
-    //Send Mail to user  
-
-    // await emailUtil.sendWelcomeEmail( email, emailContent );
-
     res.status( 201 ).json( newUser );
   } catch ( error )
   {
@@ -205,7 +194,6 @@ exports.updateUser = async ( req, res ) => {
       res.status( 404 ).json( { message: i18next.t( 'userNotFound' ) } );
     } else
     {
-
       // const emailContent = `Hi ${ firstName },\n\nYour profile information for your account has been successfully updated.\n\nHere are your updated details:\n
       //   First Name: ${ firstName }
       //   Last Name: ${ lastName }

@@ -113,6 +113,12 @@
                   "profilePicture": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "bankAccountNumber": {
+                    "type":"string"                 
+                  },
+                  "bankRoutingNumber": {
+                    "type": "string"
                   }
                 },
                 "required": [

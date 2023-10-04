@@ -27,20 +27,6 @@ exports.getUserByLogin = async ( phoneNo ) => {
     throw error;
   }
 };
-
-exports.getAllUsers = async () => {
-  try
-  {
-    const users = await User.findAll();
-    logger.info( 'Retrieved all users' );
-    return users;
-  } catch ( error )
-  {
-    logger.error( `Error while fetching all users:${ error }` );
-    throw error;
-  }
-};
-
 exports.userCreate = async (
   firstName,
   lastName,
@@ -50,10 +36,16 @@ exports.userCreate = async (
   gender,
   phoneNo,
   password,
-  profilePicture
+  profilePicture,
+  bankAccountNumber,
+  bankRoutingNumber
 ) => {
   try
   {
+
+    const encryptedBankAccountNumber = User.encryptField( bankAccountNumber );
+    const encryptedBankRoutingNumber = User.encryptField( bankRoutingNumber );
+
     const newUser = await User.create( {
       firstName,
       lastName,
@@ -64,13 +56,33 @@ exports.userCreate = async (
       phoneNo,
       password,
       profilePicture,
+      bankAccountNumber: encryptedBankAccountNumber,
+      bankRoutingNumber: encryptedBankRoutingNumber
     } );
 
-    logger.info( `Created new user with ID: ${ newUser.id }` );
     return newUser;
   } catch ( error )
   {
-    logger.error( `Error while creating new user: ${ error }` );
+    throw error;
+  }
+};
+
+// Function to retrieve all users
+exports.getAllUsers = async () => {
+  try
+  {
+    const users = await User.findAll();
+
+    // Decrypt bank details for each user
+    const usersWithDecryptedBankDetails = users.map( ( user ) => ( {
+      ...user.dataValues,
+      bankAccountNumber: User.decryptField( user.bankAccountNumber ),
+      bankRoutingNumber: User.decryptField( user.bankRoutingNumber ),
+    } ) );
+
+    return usersWithDecryptedBankDetails;
+  } catch ( error )
+  {
     throw error;
   }
 };

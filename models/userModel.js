@@ -3,7 +3,11 @@ const sequelize = require( '../db' );
 const bcrypt = require( 'bcrypt' );
 const passwordValidator = require( 'password-validator' );
 const validator = require( 'validator' );
+const crypto = require( 'crypto' );
 const logger = require( '../logger' );
+
+const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
+
 const User = sequelize.define(
     'User',
     {
@@ -32,7 +36,7 @@ const User = sequelize.define(
                 isValidEmail ( value ) {
                     if ( !value || !validator.isEmail( value ) )
                     {
-                        throw new error( 'Invalid email address' );
+                        throw new Error( 'Invalid email address' );
                     }
                 },
             },
@@ -84,6 +88,14 @@ const User = sequelize.define(
             type: DataTypes.STRING,
             allowNull: true,
         },
+        bankAccountNumber: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        bankRoutingNumber: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         twoFactorSecret: {
             type: DataTypes.STRING,
             allowNull: true,
@@ -107,5 +119,19 @@ User.beforeCreate( async ( user ) => {
         throw new Error( 'Error hashing password' );
     }
 } );
+
+User.encryptField = function ( fieldValue ) {
+    const cipher = crypto.createCipher( 'aes-256-cbc', ENCRYPTION_KEY );
+    let encrypted = cipher.update( fieldValue, 'utf8', 'hex' );
+    encrypted += cipher.final( 'hex' );
+    return encrypted;
+};
+
+User.decryptField = function ( encryptedValue ) {
+    const decipher = crypto.createDecipher( 'aes-256-cbc', ENCRYPTION_KEY );
+    let decrypted = decipher.update( encryptedValue, 'hex', 'utf8' );
+    decrypted += decipher.final( 'utf8' );
+    return decrypted;
+};
 
 module.exports = User;

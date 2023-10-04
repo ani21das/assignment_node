@@ -41,7 +41,7 @@ router.post( '/verifyOtp', ( req, res ) => {
     }
 } );
 
-router.get( '/getAllUsers', authenticationToken, ( req, res ) => {
+router.get( '/getAllUsers',  ( req, res ) => {
     try
     {
         logger.info( 'GET / getAllUsers route called' );
